@@ -2,11 +2,15 @@
 
 > **PM case study + working prototype** · AI shopping assistant (Rufus-style Q&A, "Customers say" summaries, semantic search) · Real Amazon products and reviews (Amazon Reviews 2023, All Beauty)
 
-<!-- DEMO -->
+**▶ 60-second demo (plays automatically)**
+
+![60-second walkthrough](docs/walkthrough.gif)
+
+**Live demo: [akhilesh360.github.io/proofcart](https://akhilesh360.github.io/proofcart/)**
 
 ## How it works
 
-<!-- FLOW -->
+![How it works](docs/flow.png)
 
 ### Data
 
