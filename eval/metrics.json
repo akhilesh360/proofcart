@@ -1,0 +1,92 @@
+{
+ "answers": {
+  "n": 60,
+  "n_products": 20,
+  "n_answerable": 36,
+  "n_unanswerable": 24,
+  "grounded": {
+   "n_claims": 82,
+   "unsupported_rate": 0.0,
+   "citation_precision": 0.9907407407407407,
+   "n_cites": 108,
+   "correct_refusal": 1.0,
+   "answer_rate": 0.9166666666666666,
+   "judge_unsupported_rate": 0.0
+  },
+  "naive": {
+   "n_claims": 126,
+   "unsupported_rate": 0.5,
+   "correct_refusal": 0.5416666666666666,
+   "answer_rate": 0.8055555555555556,
+   "judge_unsupported_rate": 0.521978021978022,
+   "judge_n_claims": 182
+  },
+  "judge_agreement": 1.0
+ },
+ "live": {
+  "threshold": 0.44,
+  "accuracy": 0.8666666666666667,
+  "median_top_sim_answerable": 0.5525,
+  "median_top_sim_unanswerable": 0.3235
+ },
+ "live_threshold": 0.44,
+ "summaries": {
+  "n_products": 100,
+  "judge_cited_unsupported": 0.010101010101010102,
+  "judge_naive_unsupported": 0.0,
+  "judge_cited_partial": 0.10707070707070707,
+  "judge_naive_partial": 0.3106212424849699,
+  "judge_n_cited": 495,
+  "judge_n_naive": 499,
+  "hand_n": 80,
+  "hand_unsupported": 0.0,
+  "hand_partial": 0.05,
+  "hand_citation_precision": 0.9695121951219512,
+  "hand_judge_agreement": 0.875
+ },
+ "efficiency": {
+  "n": 36,
+  "median_reviews": 2.0,
+  "mean_reviews": 4.861111111111111,
+  "median_words": 372.0,
+  "mean_words": 752.9444444444445,
+  "median_answer_words": 35.0,
+  "median_minutes_saved": 1.415966386554622,
+  "mean_minutes_saved": 3.027310924369748,
+  "wpm_assumed": 238,
+  "share_answer_in_first_review": 0.3611111111111111
+ },
+ "cost": {
+  "total_usd": 1.657120578,
+  "calls": 3900,
+  "tokens_in": 3798807,
+  "tokens_out": 447442,
+  "per_1k_answers": 0.3156126785260483,
+  "per_1k_products_summary": 0.5985862,
+  "p50_latency_s": 1.408,
+  "p90_latency_s": 1.9434,
+  "n_latency": 787,
+  "models": [
+   "deepseek-flash"
+  ]
+ },
+ "search": {
+  "n_queries": 40,
+  "semantic": {
+   "p_at_5": 0.785,
+   "mrr": 0.925
+  },
+  "keyword": {
+   "p_at_5": 0.715,
+   "mrr": 0.857
+  }
+ },
+ "headline": {
+  "grounded_unsupported": 0.0,
+  "naive_unsupported": 0.5,
+  "correct_refusal": 1.0,
+  "naive_refusal": 0.5416666666666666,
+  "median_reviews_to_answer": 2.0,
+  "cost_per_1k_answers": 0.3156126785260483
+ }
+}

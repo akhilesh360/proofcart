@@ -1,0 +1,26 @@
+"""Draw docs/architecture.png (simple rounded boxes)."""
+import matplotlib; matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
+fig, ax = plt.subplots(figsize=(12, 5.6), dpi=160); ax.set_xlim(0, 12); ax.set_ylim(0, 5.6); ax.axis("off")
+C = dict(data="#e8f1f8", off="#fdf1dc", web="#e7f5ec", ev="#f1ecf8")
+def box(x, y, w, h, title, sub, c):
+    ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.02,rounding_size=0.18", fc=c, ec="#3b4a5a", lw=1.2))
+    ax.text(x + w/2, y + h*0.66, title, ha="center", va="center", fontsize=10.5, weight="bold", color="#16191d")
+    ax.text(x + w/2, y + h*0.3, sub, ha="center", va="center", fontsize=8.3, color="#3b4a5a", wrap=True)
+def arr(a, b): ax.add_patch(FancyArrowPatch(a, b, arrowstyle="-|>", mutation_scale=14, lw=1.2, color="#3b4a5a"))
+ax.text(0.2, 5.3, "Offline (Python, run once)", fontsize=11, weight="bold", color="#7a5a12")
+ax.text(8.0, 1.95, "Online (static page, GitHub Pages, no API key)", fontsize=11, weight="bold", color="#1f6b3d")
+box(0.2, 3.7, 2.4, 1.3, "Amazon Reviews 2023", "All Beauty: 112,590 products\n701,528 reviews", C["data"])
+box(3.0, 3.7, 2.4, 1.3, "Prep + embeddings", "37,154 products, 37,500 review\nchunks, MiniLM, int8", C["off"])
+box(5.8, 3.7, 2.7, 1.3, "Grounded generation", "DeepSeek: cited summaries,\ncurated answers, refusals", C["off"])
+box(8.9, 3.7, 2.9, 1.3, "Evaluation", "hand labels + LLM judge,\nnaive vs grounded, cost", C["ev"])
+box(0.2, 0.3, 2.6, 1.3, "Shopper query", "typed in the browser", C["web"])
+box(3.2, 0.3, 2.6, 1.3, "transformers.js", "embeds query locally,\nranks 37k products", C["web"])
+box(6.2, 0.3, 2.6, 1.3, "Product page", "Customers say + Ask box,\ncitations hover to reviews", C["web"])
+box(9.2, 0.3, 2.6, 1.3, "Answer or refuse", "AI answer (precomputed) or\nretrieval-only passages", C["web"])
+arr((2.6, 4.35), (3.0, 4.35)); arr((5.4, 4.35), (5.8, 4.35)); arr((8.5, 4.35), (8.9, 4.35))
+arr((2.8, 0.95), (3.2, 0.95)); arr((5.8, 0.95), (6.2, 0.95)); arr((8.8, 0.95), (9.2, 0.95))
+arr((4.2, 3.7), (4.5, 1.6)); arr((7.1, 3.7), (7.5, 1.6))
+ax.text(4.45, 2.65, "static files", fontsize=8, color="#3b4a5a"); ax.text(7.35, 2.65, "JSON shards", fontsize=8, color="#3b4a5a")
+plt.savefig("docs/architecture.png", bbox_inches="tight", facecolor="white"); print("ok")

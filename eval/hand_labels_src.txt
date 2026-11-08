@@ -1,0 +1,63 @@
+# Hand labels for eval/answers.json, written by reading every retrieved review passage and every answer.
+# i | answerable from the product's reviews (Y/N) | grounded unsupported claims | wrong citations | naive claims counted | naive unsupported | naive declined (Y/N) | note
+# Naive claim counting rule: hedges ("the listing does not say"), advice ("consult a doctor") are excluded; facts stated in the product title count as supported.
+0|Y|0|0|3|1|N|
+1|Y|0|0|2|1|N|answer covers drying, notes mildew gap
+2|N|0|0|2|2|N|
+3|N|0|0|3|3|N|no review mentions gray coverage
+4|Y|0|0|2|2|N|naive says several weeks; reviews say 4 days to 2 weeks
+5|N|0|0|3|2|N|
+6|Y|0|0|3|1|N|grounded false refusal: reviews discuss fit at length
+7|Y|0|0|2|0|N|
+8|Y|0|0|1|0|Y|review [3] says it did not fit a Dyson
+9|Y|0|0|2|0|Y|
+10|Y|0|0|2|1|Y|grounded false refusal: review [1] reports a mark/track on a tooth
+11|N|0|0|2|1|N|
+12|Y|0|0|2|0|N|
+13|Y|0|0|4|3|N|
+14|N|0|0|0|0|Y|
+15|Y|0|0|2|2|N|naive invents 400F
+16|Y|0|0|3|1|N|
+17|N|0|0|1|1|Y|
+18|Y|0|0|2|0|N|grounded false refusal: reviews say it smooths like a flat iron and adds body
+19|Y|0|0|3|2|N|
+20|N|0|0|1|1|N|naive invents a 1-year warranty
+21|Y|0|0|3|2|N|
+22|Y|0|0|3|2|N|
+23|N|0|0|1|0|Y|
+24|Y|0|0|1|0|Y|
+25|Y|0|0|3|1|N|
+26|N|0|0|1|1|Y|
+27|Y|0|0|3|0|N|
+28|Y|0|0|2|1|N|
+29|N|0|0|1|0|Y|
+30|Y|0|0|3|0|N|naive repeats the listing claim; a reviewer says not waterproof in workouts
+31|Y|0|0|2|0|N|
+32|N|0|0|0|0|Y|
+33|Y|0|0|2|1|Y|
+34|Y|0|0|3|1|N|
+35|N|0|0|2|1|Y|
+36|N|0|0|2|2|N|reviews attached to this listing describe a nail drill, not a bidet
+37|N|0|0|0|0|Y|same mismatched reviews
+38|N|0|0|2|2|N|same mismatched reviews
+39|Y|0|0|3|0|N|
+40|N|0|0|2|1|Y|
+41|N|0|0|3|3|N|
+42|Y|0|1|3|2|N|claim 1 cites [5], which does not mention sliding
+43|N|0|0|2|2|N|
+44|N|0|0|1|0|Y|
+45|Y|0|0|3|3|N|
+46|Y|0|0|3|1|N|
+47|N|0|0|2|1|Y|
+48|Y|0|0|1|0|Y|
+49|Y|0|0|3|2|N|
+50|N|0|0|2|2|N|reviews say it uses e-series heads; DiamondClean fit needs outside knowledge
+51|Y|0|0|3|0|N|
+52|Y|0|0|3|1|N|
+53|N|0|0|1|1|Y|
+54|Y|0|0|3|1|N|naive says reviewers saw longer lashes; reviews say the opposite
+55|Y|0|0|2|1|Y|
+56|Y|0|0|3|2|N|
+57|Y|0|0|2|0|N|
+58|N|0|0|2|2|N|
+59|N|0|0|0|0|Y|

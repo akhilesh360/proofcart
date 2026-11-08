@@ -1,0 +1,314 @@
+[
+ {
+  "q": "Which hair diffuser works best for curly hair?",
+  "products": [
+   "B07L2SJZYB",
+   "B019GBG0IE",
+   "B00VIYHWUS",
+   "B01ETV11XU"
+  ],
+  "rids": [
+   "B07L2SJZYB-15",
+   "B07L2SJZYB-17",
+   "B019GBG0IE-3",
+   "B019GBG0IE-11",
+   "B00VIYHWUS-0",
+   "B00VIYHWUS-6",
+   "B01ETV11XU-17",
+   "B01ETV11XU-7"
+  ],
+  "sec": 3.48,
+  "refused": false,
+  "answer": "Reviews disagree on the Hair Dryer Diffuser for Most Blowdryers Curly Wavy Hair Natu: one reviewer says airflow is weak and drying curly hair takes much longer [1], while another says it dried curly hair fast in about 15 minutes versus an hour with a bowl diffuser [2]. The Collapsible Hair Diffuser by The Curly Co. gets positive curly-hair feedback, drying hair quickly with next to no frizz [3] and working well for travel [4]. The Xtava Verona is praised as a diffuser/hairdryer combo for wavy-to-curly hair [5], though one curly-haired reviewer only confirms it dries hair and criticizes its button placement [6].",
+  "claims": [
+   {
+    "text": "The Hair Dryer Diffuser for Most Blowdryers Curly Wavy Hair Natu has weak airflow and takes much longer to dry curly hair.",
+    "cites": [
+     1
+    ]
+   },
+   {
+    "text": "The same diffuser dried curly hair fast, about 15 minutes versus an hour with a bowl diffuser.",
+    "cites": [
+     2
+    ]
+   },
+   {
+    "text": "The Collapsible Hair Diffuser by The Curly Co. dried hair quickly with next to no frizz.",
+    "cites": [
+     3
+    ]
+   },
+   {
+    "text": "The Collapsible Hair Diffuser by The Curly Co. worked well for travel.",
+    "cites": [
+     4
+    ]
+   },
+   {
+    "text": "The Xtava Verona is praised as a diffuser/hairdryer combo for wavy-to-curly hair.",
+    "cites": [
+     5
+    ]
+   },
+   {
+    "text": "A curly-haired reviewer says the Xtava Verona dries hair but has poorly placed buttons/switches.",
+    "cites": [
+     6
+    ]
+   }
+  ]
+ },
+ {
+  "q": "Which exfoliating cloth is gentle enough for sensitive skin?",
+  "products": [
+   "B017S4RW9M",
+   "B01F99RQQW",
+   "B01LMXWJOI",
+   "B07S9DLZGT"
+  ],
+  "rids": [
+   "B017S4RW9M-6",
+   "B017S4RW9M-11",
+   "B01F99RQQW-2",
+   "B01F99RQQW-19",
+   "B01LMXWJOI-15",
+   "B01LMXWJOI-2",
+   "B07S9DLZGT-6",
+   "B07S9DLZGT-23"
+  ],
+  "sec": 0.86,
+  "refused": true,
+  "answer": "Not enough evidence in reviews to answer this.",
+  "claims": []
+ },
+ {
+  "q": "Which beard trimmer is easiest to clean?",
+  "products": [
+   "B0001HYJW2",
+   "B01MR513G3",
+   "B07R3BMYBG",
+   "B07YJCW7GR"
+  ],
+  "rids": [
+   "B0001HYJW2-5",
+   "B0001HYJW2-12",
+   "B01MR513G3-16",
+   "B01MR513G3-21",
+   "B07R3BMYBG-9",
+   "B07R3BMYBG-19",
+   "B07YJCW7GR-20",
+   "B07YJCW7GR-9"
+  ],
+  "sec": 1.7,
+  "refused": false,
+  "answer": "The Electric Razor for Men 5 in 1 Rechargeable Electric Shaver B is described as easy to clean [7]. The Philips Norelco T970 Accu-Vac reviews mention a vacuum that catches about 2/3 of hairs [1] and reduces mess [2], but neither directly addresses ease of cleaning. No review directly compares cleaning ease between the two, so the 5 in 1 is the only one explicitly called easy to clean.",
+  "claims": [
+   {
+    "text": "The Electric Razor for Men 5 in 1 Rechargeable Electric Shaver B is described as easy to clean.",
+    "cites": [
+     7
+    ]
+   },
+   {
+    "text": "The Philips Norelco T970 Accu-Vac has a vacuum that catches about 2/3 of hairs and reduces mess.",
+    "cites": [
+     1,
+     2
+    ]
+   }
+  ]
+ },
+ {
+  "q": "Which hair brush is best for fine hair?",
+  "products": [
+   "B00MFWM1YO",
+   "B0182PKATA",
+   "B00R1TAN7I",
+   "B07B9LB63D"
+  ],
+  "rids": [
+   "B00MFWM1YO-24",
+   "B00MFWM1YO-12",
+   "B0182PKATA-12",
+   "B0182PKATA-2",
+   "B00R1TAN7I-17",
+   "B00R1TAN7I-9",
+   "B07B9LB63D-16",
+   "B07B9LB63D-2"
+  ],
+  "sec": 0.76,
+  "refused": true,
+  "answer": "Not enough evidence in reviews to answer this.",
+  "claims": []
+ },
+ {
+  "q": "Which blackhead remover actually works without bruising?",
+  "products": [
+   "B00PXYOH9S",
+   "B01KIMMY6C",
+   "B01N7ODHA0",
+   "B075WF94X4"
+  ],
+  "rids": [
+   "B00PXYOH9S-13",
+   "B00PXYOH9S-15",
+   "B01KIMMY6C-1",
+   "B01KIMMY6C-12",
+   "B01N7ODHA0-23",
+   "B01N7ODHA0-2",
+   "B075WF94X4-16",
+   "B075WF94X4-11"
+  ],
+  "sec": 0.66,
+  "refused": true,
+  "answer": "Not enough evidence in reviews to answer this.",
+  "claims": []
+ },
+ {
+  "q": "Which eyebrow pen lasts all day without smudging?",
+  "products": [
+   "B07L89T5GX",
+   "B07KSZX5CB",
+   "B078R1YZ3P",
+   "B07WH7675C"
+  ],
+  "rids": [
+   "B07L89T5GX-3",
+   "B07L89T5GX-15",
+   "B07KSZX5CB-10",
+   "B07KSZX5CB-15",
+   "B078R1YZ3P-24",
+   "B078R1YZ3P-9",
+   "B07WH7675C-22",
+   "B07WH7675C-24"
+  ],
+  "sec": 1.78,
+  "refused": false,
+  "answer": "The Vanelc Eyebrow Tattoo Pen is described as not bleeding, smearing, or fading [1]. The AFY eyebrow pencil is said to stay on [5] and last even overnight [6]. The 4 Point Eyebrow Pen stayed clear and crisp overnight on a hand test [7], though another reviewer found it barely dispensed color [8].",
+  "claims": [
+   {
+    "text": "The Vanelc Eyebrow Tattoo Pen does not bleed, smear, or fade.",
+    "cites": [
+     1
+    ]
+   },
+   {
+    "text": "The AFY eyebrow pencil stays on and lasts even overnight.",
+    "cites": [
+     5,
+     6
+    ]
+   },
+   {
+    "text": "The 4 Point Eyebrow Pen stayed clear and crisp overnight on a hand test.",
+    "cites": [
+     7
+    ]
+   },
+   {
+    "text": "Another reviewer found the 4 Point Eyebrow Pen barely dispensed color.",
+    "cites": [
+     8
+    ]
+   }
+  ]
+ },
+ {
+  "q": "Which shower cap keeps long hair dry?",
+  "products": [
+   "B09GNXK3N1",
+   "B07K5D3YZ3",
+   "B07CBJ9ZJZ",
+   "B0837NJT25"
+  ],
+  "rids": [
+   "B09GNXK3N1-17",
+   "B09GNXK3N1-0",
+   "B07K5D3YZ3-20",
+   "B07K5D3YZ3-0",
+   "B07CBJ9ZJZ-21",
+   "B07CBJ9ZJZ-2",
+   "B0837NJT25-5",
+   "B0837NJT25-6"
+  ],
+  "sec": 2.41,
+  "refused": false,
+  "answer": "The Reusable Shower Cap for Women \u2013 Leakproof, Nonslip Hair Cap keeps long hair dry, with one reviewer noting their hair stays dry despite a keratin treatment [1] and another with nearly waist-length hair saying their hair doesn't get wet at all [2]. The Joemoon Long Hair Shower Cap is also described as keeping all hair dry [4] and holding long hair in while showering [3]. The 4Pcs Shower Caps work for shoulder-length hair [7] but may be too tight for very long hair [7][8].",
+  "claims": [
+   {
+    "text": "The Reusable Shower Cap for Women keeps long hair dry, including for a reviewer with a keratin treatment.",
+    "cites": [
+     1
+    ]
+   },
+   {
+    "text": "A reviewer with nearly waist-length hair says their hair doesn't get wet at all with the Reusable Shower Cap for Women.",
+    "cites": [
+     2
+    ]
+   },
+   {
+    "text": "The Joemoon Long Hair Shower Cap holds long hair in while showering.",
+    "cites": [
+     3
+    ]
+   },
+   {
+    "text": "The Joemoon Long Hair Shower Cap keeps all hair dry.",
+    "cites": [
+     4
+    ]
+   },
+   {
+    "text": "The 4Pcs Shower Caps fit snugly for shoulder-length hair but may be too tight for very long hair.",
+    "cites": [
+     7,
+     8
+    ]
+   }
+  ]
+ },
+ {
+  "q": "Which curling iron holds curls longest?",
+  "products": [
+   "B08F591JFC",
+   "B098JPD7K8",
+   "B00UJ90JXA",
+   "B075L6R3TZ"
+  ],
+  "rids": [
+   "B08F591JFC-12",
+   "B08F591JFC-1",
+   "B098JPD7K8-10",
+   "B098JPD7K8-4",
+   "B00UJ90JXA-4",
+   "B00UJ90JXA-18",
+   "B075L6R3TZ-4",
+   "B075L6R3TZ-23"
+  ],
+  "sec": 1.84,
+  "refused": false,
+  "answer": "The 3 Barrel Curling Iron Wand TEATTY Hair Waver is reported to hold curls all day, even on fine, straight hair [4]. The inkint Mini Curling Iron also kept curls for a long time [5]. By contrast, the Hair Waver, Beach Curls Curling Iron did not hold curls as long as expected [8].",
+  "claims": [
+   {
+    "text": "The 3 Barrel Curling Iron Wand TEATTY Hair Waver held curls all day on fine, straight hair [4].",
+    "cites": [
+     4
+    ]
+   },
+   {
+    "text": "The inkint Mini Curling Iron kept curls for a long time [5].",
+    "cites": [
+     5
+    ]
+   },
+   {
+    "text": "The Hair Waver, Beach Curls Curling Iron did not hold curls as long as expected [8].",
+    "cites": [
+     8
+    ]
+   }
+  ]
+ }
+]

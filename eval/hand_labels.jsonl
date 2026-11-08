@@ -1,0 +1,60 @@
+{"i": 0, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 1, "naive_declined": false, "note": ""}
+{"i": 1, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 1, "naive_declined": false, "note": "answer covers drying, notes mildew gap"}
+{"i": 2, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 2, "naive_declined": false, "note": ""}
+{"i": 3, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 3, "naive_declined": false, "note": "no review mentions gray coverage"}
+{"i": 4, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 2, "naive_declined": false, "note": "naive says several weeks; reviews say 4 days to 2 weeks"}
+{"i": 5, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 2, "naive_declined": false, "note": ""}
+{"i": 6, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 1, "naive_declined": false, "note": "grounded false refusal: reviews discuss fit at length"}
+{"i": 7, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 0, "naive_declined": false, "note": ""}
+{"i": 8, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 1, "naive_unsupported": 0, "naive_declined": true, "note": "review [3] says it did not fit a Dyson"}
+{"i": 9, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 0, "naive_declined": true, "note": ""}
+{"i": 10, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 1, "naive_declined": true, "note": "grounded false refusal: review [1] reports a mark/track on a tooth"}
+{"i": 11, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 1, "naive_declined": false, "note": ""}
+{"i": 12, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 0, "naive_declined": false, "note": ""}
+{"i": 13, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 4, "naive_unsupported": 3, "naive_declined": false, "note": ""}
+{"i": 14, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 0, "naive_unsupported": 0, "naive_declined": true, "note": ""}
+{"i": 15, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 2, "naive_declined": false, "note": "naive invents 400F"}
+{"i": 16, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 1, "naive_declined": false, "note": ""}
+{"i": 17, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 1, "naive_unsupported": 1, "naive_declined": true, "note": ""}
+{"i": 18, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 0, "naive_declined": false, "note": "grounded false refusal: reviews say it smooths like a flat iron and adds body"}
+{"i": 19, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 2, "naive_declined": false, "note": ""}
+{"i": 20, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 1, "naive_unsupported": 1, "naive_declined": false, "note": "naive invents a 1-year warranty"}
+{"i": 21, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 2, "naive_declined": false, "note": ""}
+{"i": 22, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 2, "naive_declined": false, "note": ""}
+{"i": 23, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 1, "naive_unsupported": 0, "naive_declined": true, "note": ""}
+{"i": 24, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 1, "naive_unsupported": 0, "naive_declined": true, "note": ""}
+{"i": 25, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 1, "naive_declined": false, "note": ""}
+{"i": 26, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 1, "naive_unsupported": 1, "naive_declined": true, "note": ""}
+{"i": 27, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 0, "naive_declined": false, "note": ""}
+{"i": 28, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 1, "naive_declined": false, "note": ""}
+{"i": 29, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 1, "naive_unsupported": 0, "naive_declined": true, "note": ""}
+{"i": 30, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 0, "naive_declined": false, "note": "naive repeats the listing claim; a reviewer says not waterproof in workouts"}
+{"i": 31, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 0, "naive_declined": false, "note": ""}
+{"i": 32, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 0, "naive_unsupported": 0, "naive_declined": true, "note": ""}
+{"i": 33, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 1, "naive_declined": true, "note": ""}
+{"i": 34, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 1, "naive_declined": false, "note": ""}
+{"i": 35, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 1, "naive_declined": true, "note": ""}
+{"i": 36, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 2, "naive_declined": false, "note": "reviews attached to this listing describe a nail drill, not a bidet"}
+{"i": 37, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 0, "naive_unsupported": 0, "naive_declined": true, "note": "same mismatched reviews"}
+{"i": 38, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 2, "naive_declined": false, "note": "same mismatched reviews"}
+{"i": 39, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 0, "naive_declined": false, "note": ""}
+{"i": 40, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 1, "naive_declined": true, "note": ""}
+{"i": 41, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 3, "naive_declined": false, "note": ""}
+{"i": 42, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 1, "naive_claims": 3, "naive_unsupported": 2, "naive_declined": false, "note": "claim 1 cites [5], which does not mention sliding"}
+{"i": 43, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 2, "naive_declined": false, "note": ""}
+{"i": 44, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 1, "naive_unsupported": 0, "naive_declined": true, "note": ""}
+{"i": 45, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 3, "naive_declined": false, "note": ""}
+{"i": 46, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 1, "naive_declined": false, "note": ""}
+{"i": 47, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 1, "naive_declined": true, "note": ""}
+{"i": 48, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 1, "naive_unsupported": 0, "naive_declined": true, "note": ""}
+{"i": 49, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 2, "naive_declined": false, "note": ""}
+{"i": 50, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 2, "naive_declined": false, "note": "reviews say it uses e-series heads; DiamondClean fit needs outside knowledge"}
+{"i": 51, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 0, "naive_declined": false, "note": ""}
+{"i": 52, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 1, "naive_declined": false, "note": ""}
+{"i": 53, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 1, "naive_unsupported": 1, "naive_declined": true, "note": ""}
+{"i": 54, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 1, "naive_declined": false, "note": "naive says reviewers saw longer lashes; reviews say the opposite"}
+{"i": 55, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 1, "naive_declined": true, "note": ""}
+{"i": 56, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 3, "naive_unsupported": 2, "naive_declined": false, "note": ""}
+{"i": 57, "answerable": true, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 0, "naive_declined": false, "note": ""}
+{"i": 58, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 2, "naive_unsupported": 2, "naive_declined": false, "note": ""}
+{"i": 59, "answerable": false, "grounded_unsupported": 0, "wrong_cites": 0, "naive_claims": 0, "naive_unsupported": 0, "naive_declined": true, "note": ""}

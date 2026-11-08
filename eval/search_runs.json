@@ -1,0 +1,682 @@
+[
+{
+"q": "exfoliating washcloth for the shower",
+"semantic": [
+"B076HSB8SZ",
+"B07N85ZNSJ",
+"B07S9DLZGT",
+"B0863L5YZ5",
+"B08DNQKMS3"
+],
+"keyword": [
+"B07B3W3R1K",
+"B076HSB8SZ",
+"B08FQZTB2X",
+"B00YI0XFUU",
+"B085RB4K7T"
+]
+},
+{
+"q": "curling iron for loose beach waves",
+"semantic": [
+"B082K86V48",
+"B075ZMXQ4F",
+"B07PM6FHP9",
+"B07PKJD92X",
+"B087WZ664B"
+],
+"keyword": [
+"B07YD61894",
+"B087WZ664B",
+"B082K86V48",
+"B08L954JWP",
+"B08L89JSG6"
+]
+},
+{
+"q": "diffuser attachment for curly hair",
+"semantic": [
+"B08V213KPX",
+"B07L2SJZYB",
+"B019GBG0IE",
+"B07RLJW1R9",
+"B07WK23YCR"
+],
+"keyword": [
+"B088D1LKXX",
+"B07WK23YCR",
+"B07HMLW4Z3",
+"B09CNQNJ13",
+"B082SSZL2V"
+]
+},
+{
+"q": "boar bristle brush for fine hair",
+"semantic": [
+"B07FT1H44J",
+"B08THQX1P8",
+"B01MQF7PYV",
+"B0912LWHDH",
+"B0719X3GV9"
+],
+"keyword": [
+"B00R1TAN7I",
+"B07HNMR45N",
+"B083M7MNLP",
+"B0714CQZY6",
+"B07L3LGZ5B"
+]
+},
+{
+"q": "sulfate free shampoo for dry hair",
+"semantic": [
+"B00TJ1YQCO",
+"B007RFDXAA",
+"B073QXXV5T",
+"B07HLMLW1T",
+"B0785NXSSJ"
+],
+"keyword": [
+"B07R1K1SBD",
+"B017AGMC3O",
+"B015PINSGY",
+"B013IS1ZP4",
+"B0722L7Q3L"
+]
+},
+{
+"q": "moisturizer for very dry cracked hands",
+"semantic": [
+"B08PYYH8GB",
+"B017BGJLBE",
+"B079TYBL25",
+"B077KHY7CW",
+"B018EYC72C"
+],
+"keyword": [
+"B018EYC72C",
+"B07ND7TYJ7",
+"B00UCKQ796",
+"B082TPQY2R",
+"B017BGJLBE"
+]
+},
+{
+"q": "waterproof eyebrow pencil",
+"semantic": [
+"B081Z9XLW6",
+"B081HVHHNW",
+"B07YKYGB93",
+"B077877SM4",
+"B07C56WBNK"
+],
+"keyword": [
+"B07ZJKVVLW",
+"B07WH7675C",
+"B085G3LD7Y",
+"B07VZBBC9K",
+"B078R1YZ3P"
+]
+},
+{
+"q": "reusable makeup remover pads",
+"semantic": [
+"B089RYCPWD",
+"B089YWCVRQ",
+"B086KSKKHV",
+"B07PBWY1ZD",
+"B07TGJHVBR"
+],
+"keyword": [
+"B07XDL4X8P",
+"B07P71FZPH",
+"B087F14JSH",
+"B083W3NMC1",
+"B088LWRYJC"
+]
+},
+{
+"q": "travel size empty spray bottle",
+"semantic": [
+"B086SFGYXX",
+"B087CGMLP5",
+"B07DN6G4TX",
+"B089QHJDT6",
+"B06Y5SSMW5"
+],
+"keyword": [
+"B07Z3YZ65X",
+"B08DHZTNMF",
+"B07WT2VXP8",
+"B086SFGYXX",
+"B088STXGS1"
+]
+},
+{
+"q": "electric toothbrush for kids",
+"semantic": [
+"B09JZSKGG3",
+"B07JPF4FMJ",
+"B093SL6KJ9",
+"B01GW4IZUO",
+"B098TYNHBR"
+],
+"keyword": [
+"B08H4QJ1M6",
+"B07QQ8Z86V",
+"B08LB1GH3S",
+"B085FQTYJ1",
+"B097RCLRQV"
+]
+},
+{
+"q": "nose hair trimmer",
+"semantic": [
+"B09444WCR1",
+"B07DY9JY3K",
+"B0824STYFX",
+"B07FZWDYNY",
+"B074M7XSGG"
+],
+"keyword": [
+"B099BLC99J",
+"B087CPVVHN",
+"B08D9JY2Z1",
+"B07YJCW7GR",
+"B08C7BP588"
+]
+},
+{
+"q": "beard trimmer with vacuum",
+"semantic": [
+"B0001HYJVS",
+"B0001HYJW2",
+"B0001HYKBW",
+"B0716PXX4R",
+"B000ECHJ94"
+],
+"keyword": [
+"B07X8TT8PQ",
+"B000FEF1V4",
+"B07K1DRCYR",
+"B000FED5D0",
+"B087CPVVHN"
+]
+},
+{
+"q": "gel nail polish kit with uv lamp",
+"semantic": [
+"B094QK4XCG",
+"B07DB5LSF5",
+"B079QWH1BD",
+"B0813F6K6X",
+"B01MT5VAEX"
+],
+"keyword": [
+"B08GYMYS2S",
+"B085ZRVDKP",
+"B07DB5LSF5",
+"B085C6CQWH",
+"B07D3PN9QD"
+]
+},
+{
+"q": "false eyelashes natural look",
+"semantic": [
+"B08SVVFCTG",
+"B09QSLMPR5",
+"B07WTZP6WD",
+"B07T18M68C",
+"B07Y5VPGGN"
+],
+"keyword": [
+"B0B5XFVSXY",
+"B07WDJB6BH",
+"B088RGM31Z",
+"B08BZNW9NK",
+"B083NNHR35"
+]
+},
+{
+"q": "eyelash growth serum",
+"semantic": [
+"B08ZDTWL1B",
+"B0896W1MBX",
+"B082MTTFZD",
+"B099PKNG7D",
+"B011ZAUS3C"
+],
+"keyword": [
+"B011JG1K3E",
+"B01BJCLNIA",
+"B01GGEVW14",
+"B07CSL21J8",
+"B014FE69WE"
+]
+},
+{
+"q": "hair clips for thick hair",
+"semantic": [
+"B091T27LFD",
+"B091KTZCC7",
+"B07H4GCJ49",
+"B08HMJT41C",
+"B091DYYD88"
+],
+"keyword": [
+"B07DQGT2JH",
+"B07YFRD9ZH",
+"B08P53H9BV",
+"B08YR18S1B",
+"B08C2M5VX8"
+]
+},
+{
+"q": "silk pillowcase for hair",
+"semantic": [
+"B07MD2B3PB",
+"B08CS8GMG1",
+"B081ZCHSZJ",
+"B08FY93Z6V",
+"B08Z855648"
+],
+"keyword": [
+"B08G4W8BH9",
+"B089LR2Y1S",
+"B001VPEFPY",
+"B09533Q4T9",
+"B096H8GKDW"
+]
+},
+{
+"q": "satin bonnet for sleeping",
+"semantic": [
+"B08Z855648",
+"B08Z76M6GL",
+"B08HHVP96L",
+"B09LS5W166",
+"B09LS4NN2D"
+],
+"keyword": [
+"B07RRVNQSV",
+"B088FN65SB",
+"B089WBCWZR",
+"B08P7GS2ZB",
+"B088CPV97J"
+]
+},
+{
+"q": "shower cap that keeps hair dry",
+"semantic": [
+"B07V4FWMS2",
+"B08FLWY5XG",
+"B07PGPHXTJ",
+"B08K8VB5FK",
+"B093WFLJ8M"
+],
+"keyword": [
+"B07PGPHXTJ",
+"B085HF48H6",
+"B08P3TGKFC",
+"B07KV31WDS",
+"B08P8RWLYQ"
+]
+},
+{
+"q": "foot scrubber for the shower",
+"semantic": [
+"B07RSQNR8L",
+"B075Q6G6Y5",
+"B095BVRHYP",
+"B01B9YDM0A",
+"B08JT1SSXY"
+],
+"keyword": [
+"B06XWK7X5M",
+"B07B3W3R1K",
+"B095BVRHYP",
+"B0B68RS77Z",
+"B075Q6G6Y5"
+]
+},
+{
+"q": "callus remover for feet",
+"semantic": [
+"B097NT4482",
+"B01GDCGOJY",
+"B06XYJB5LL",
+"B07HQ4YBSS",
+"B08BJLPZYK"
+],
+"keyword": [
+"B08SWV1X6D",
+"B00SG1JXS0",
+"B0821T443T",
+"B00KR4AFJU",
+"B00ROE0KLE"
+]
+},
+{
+"q": "self tanning mitt",
+"semantic": [
+"B06XMYLZYJ",
+"B01H5PL2MW",
+"B09FFQT1KK",
+"B015NMJGSG",
+"B013USRGFU"
+],
+"keyword": [
+"B09FFQT1KK",
+"B015NMJGSG",
+"B01GAKWGB4",
+"B01H5PL2MW",
+"B07FLW7DF4"
+]
+},
+{
+"q": "blackhead remover tool",
+"semantic": [
+"B07F1MMDWF",
+"B07DPLGNP2",
+"B07R8V46J4",
+"B07X8PKPSZ",
+"B07RF66643"
+],
+"keyword": [
+"B08RNQNFW1",
+"B071R5JBLF",
+"B06Y61B4DV",
+"B07Q358MBK",
+"B07WDHNLRC"
+]
+},
+{
+"q": "jade roller for face",
+"semantic": [
+"B07MGZG8B3",
+"B000DZL0U6",
+"B07PF5KP2J",
+"B07MQ3RND1",
+"B006E6SEWA"
+],
+"keyword": [
+"B0189OQF8Y",
+"B07BL5QC95",
+"B017JSZKGY",
+"B079KW81R1",
+"B007Z1NLW6"
+]
+},
+{
+"q": "tweezers for ingrown hairs",
+"semantic": [
+"B01E5UVUCW",
+"B07F12ZXHX",
+"B08BLX72TP",
+"B07CJKT32J",
+"B08C2T24WG"
+],
+"keyword": [
+"B01GL4HV64",
+"B01E5UVUCW",
+"B014TOT602",
+"B01AKTGHFW",
+"B071Z37KV1"
+]
+},
+{
+"q": "nail clippers for thick toenails",
+"semantic": [
+"B0758F8CGN",
+"B07FVM1VQ1",
+"B08RBDFRCV",
+"B081CRYCJK",
+"B01HGH9E10"
+],
+"keyword": [
+"B07FVM1VQ1",
+"B01HGH9E10",
+"B091T4XZKZ",
+"B08P9QCF71",
+"B07RZJHBKT"
+]
+},
+{
+"q": "headband for washing face",
+"semantic": [
+"B081SQ78C2",
+"B09Q5TTQS7",
+"B08PQMJRZZ",
+"B089K4SV23",
+"B008350QY4"
+],
+"keyword": [
+"B08R698DJJ",
+"B09XM75TZB",
+"B08SBR3ZFL",
+"B07Y9NHL4F",
+"B08K7QW1QS"
+]
+},
+{
+"q": "hair mask for damaged hair",
+"semantic": [
+"B01BKR5GUK",
+"B07YB77R2K",
+"B07X65LZP7",
+"B013IRN9E0",
+"B08X42S36M"
+],
+"keyword": [
+"B0BV1FPZY6",
+"B01KUXDRQ0",
+"B07Y1V8PDL",
+"B07WQWVGHZ",
+"B01BKR5IEE"
+]
+},
+{
+"q": "dry shampoo for oily hair",
+"semantic": [
+"B07NY2CCPK",
+"B00P9NGIA4",
+"B077TBSVK8",
+"B01GC09HCS",
+"B014Q121Y6"
+],
+"keyword": [
+"B013IS1ZP4",
+"B077TBSVK8",
+"B0748NPLY9",
+"B08KDK8N4Q",
+"B075PJTYJK"
+]
+},
+{
+"q": "scalp massager brush",
+"semantic": [
+"B08SQGVL2G",
+"B078T44M6H",
+"B07PVS8DW8",
+"B08C5LDCMP",
+"B08S3Q8HKH"
+],
+"keyword": [
+"B07KDNK11M",
+"B07V1W4597",
+"B07PVS8DW8",
+"B01BV7MUZ8",
+"B082VYX7G8"
+]
+},
+{
+"q": "wig cap for lace wigs",
+"semantic": [
+"B098WX65J5",
+"B07PLGX354",
+"B076F52WW8",
+"B07WR9D48P",
+"B07LBGM5WN"
+],
+"keyword": [
+"B07HSQ7N8V",
+"B07W995F7B",
+"B074CYBSLR",
+"B098WX65J5",
+"B0797W5127"
+]
+},
+{
+"q": "mannequin head for braiding practice",
+"semantic": [
+"B08T86ZLLK",
+"B08T88XTWF",
+"B08MQT7YWY",
+"B088BVWSBT",
+"B08KPXGKVY"
+],
+"keyword": [
+"B09LHS6RGF",
+"B08KPXGKVY",
+"B07NMG6ZHQ",
+"B08MQSMDQ8",
+"B088BVWSBT"
+]
+},
+{
+"q": "tiara for a birthday party",
+"semantic": [
+"B000WN45UQ",
+"B09QXCW4ZG",
+"B07K9KB7FP",
+"B008ZJOYQY",
+"B000WN2T2M"
+],
+"keyword": [
+"B07QPXXBBZ",
+"B08BYKQS9S",
+"B072HH244M",
+"B071NG6PVD",
+"B08BYK8SKR"
+]
+},
+{
+"q": "hair growth oil with rosemary",
+"semantic": [
+"B0B87L2H8R",
+"B08XNBZYS3",
+"B07CMFMJF7",
+"B07C67F7MG",
+"B07Q1678K2"
+],
+"keyword": [
+"B09R9336BK",
+"B0B87L2H8R",
+"B01BJCLNIA",
+"B01GS8J18E",
+"B00VX17F1W"
+]
+},
+{
+"q": "lip balm for chapped lips",
+"semantic": [
+"B07W731KBM",
+"B07FN4M45L",
+"B0846VKCJQ",
+"B07NNNYR36",
+"B0881XHZ99"
+],
+"keyword": [
+"B07FN4M45L",
+"B082WPZR9B",
+"B00NFX25BG",
+"B08G5YVHQP",
+"B01M9GHIOV"
+]
+},
+{
+"q": "perfume that smells like vanilla",
+"semantic": [
+"B072N95X6P",
+"B07F3JLHZV",
+"B00DRAQYEG",
+"B07JC8WX7N",
+"B086H1PWKZ"
+],
+"keyword": [
+"B0C619KBLQ",
+"B07CHTNNG4",
+"B07JC8WX7N",
+"B07XN46M34",
+"B01BOGHYPW"
+]
+},
+{
+"q": "teeth whitening strips",
+"semantic": [
+"B0829VV4TZ",
+"B00YD19W60",
+"B000067E30",
+"B07GJF2KHR",
+"B00915GCW0"
+],
+"keyword": [
+"B00YD19W60",
+"B07FNH8C5C",
+"B079VHXK9R",
+"B07HD3JHKQ",
+"B07V3R7JLS"
+]
+},
+{
+"q": "dental floss picks",
+"semantic": [
+"B07RPL6JK9",
+"B075RGRDQX",
+"B08LZY33RL",
+"B071XY9K62",
+"B07BTL585D"
+],
+"keyword": [
+"B08LZY33RL",
+"B0989YSM8H",
+"B00BY09B8W",
+"B07BTL585D",
+"B00AEVP8QG"
+]
+},
+{
+"q": "portable bidet for travel",
+"semantic": [
+"B074KD4PX2",
+"B01EU00VHM",
+"B07X1KJKQD",
+"B07SVZ85SJ",
+"B08R8FX49Z"
+],
+"keyword": [
+"B074KD4PX2",
+"B019FT4Q06",
+"B09B9NYX77",
+"B07YFWS1Y3",
+"B07Z82BJNP"
+]
+},
+{
+"q": "ear warmer headband for winter running",
+"semantic": [
+"B08FZ12VBB",
+"B00DT4757A",
+"B08MZRHYRY",
+"B07YWQZF2V",
+"B0BHQHW3QY"
+],
+"keyword": [
+"B08FZ12VBB",
+"B08MZRHYRY",
+"B07YWQZF2V",
+"B00Q6WMKO0",
+"B08P4RCLH5"
+]
+}
+]

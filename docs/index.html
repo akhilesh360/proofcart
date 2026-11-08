@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProofCart</title>
+<meta name="description" content="A shopping assistant that answers only from real customer reviews, cites every claim, and says when the reviews do not cover a question.">
+<style>
+:root{--bg:#f4f5f7;--card:#fff;--ink:#16191d;--muted:#5b6470;--line:#dfe3e8;--head:#1d2633;--head2:#2a3646;--accent:#f2a93b;--accent-ink:#1d1d1d;--link:#0b6b8a;--good:#1a7f4b;--warn:#a15c00;--bad:#b42318;--chip:#eef4f7;--star:#e39b19}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1318;--card:#171c23;--ink:#e8ecf1;--muted:#9aa5b1;--line:#2a323c;--head:#0b0f14;--head2:#151b23;--link:#5cc0e0;--chip:#1d2833;--good:#47c28a;--warn:#e0a24a;--bad:#f07167}}
+:root[data-theme="dark"]{--bg:#0f1318;--card:#171c23;--ink:#e8ecf1;--muted:#9aa5b1;--line:#2a323c;--head:#0b0f14;--head2:#151b23;--link:#5cc0e0;--chip:#1d2833;--good:#47c28a;--warn:#e0a24a;--bad:#f07167}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+header{background:var(--head);color:#fff;position:sticky;top:0;z-index:20}
+.bar{max-width:1200px;margin:0 auto;display:flex;gap:16px;align-items:center;padding:10px 16px}
+.logo{font-weight:700;font-size:19px;letter-spacing:-.3px;color:#fff;white-space:nowrap}.logo span{color:var(--accent)}
+form.search{flex:1;display:flex;min-width:0}
+form.search input{flex:1;min-width:0;border:0;border-radius:8px 0 0 8px;padding:10px 12px;font-size:15px;background:#fff;color:#111}
+form.search button{border:0;border-radius:0 8px 8px 0;background:var(--accent);color:var(--accent-ink);padding:0 16px;font-weight:600;cursor:pointer}
+nav.tabs a{color:#dfe6ee;margin-left:14px;font-size:14px;white-space:nowrap}
+.sub{background:var(--head2);color:#c9d3dd;font-size:12.5px}.sub .bar{padding:6px 16px}
+#status{margin-left:auto}
+main{max-width:1200px;margin:0 auto;padding:20px 16px 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:18px}
+h1{font-size:26px;line-height:1.25;margin:0 0 8px;letter-spacing:-.4px}h2{font-size:19px;margin:0 0 10px}h3{font-size:15px;margin:0 0 8px}
+.muted{color:var(--muted)}.small{font-size:12.5px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.pill{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:6px 12px;font-size:13.5px;cursor:pointer}
+.pill:hover{border-color:var(--link)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:14px}
+.prod{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:6px;cursor:pointer;color:var(--ink)}
+.prod:hover{border-color:var(--link);text-decoration:none}
+.img{aspect-ratio:1;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.img img{max-width:92%;max-height:92%;object-fit:contain}
+.ptitle{font-size:14px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.stars{color:var(--star);letter-spacing:1px;font-size:14px}
+.badge{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--chip);color:var(--link);border:1px solid var(--line)}
+.pp{display:grid;grid-template-columns:320px 1fr;gap:20px}
+.claims{margin:0;padding-left:18px}.claims li{margin:6px 0}
+.cite{display:inline-block;font-size:11.5px;font-weight:600;color:var(--link);background:var(--chip);border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-left:3px;cursor:pointer;position:relative;vertical-align:1px}
+.tip{position:absolute;left:0;top:22px;width:340px;max-width:80vw;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.18);padding:10px 12px;font-weight:400;font-size:13px;line-height:1.45;z-index:30;display:none;white-space:normal}
+.cite:hover .tip,.cite:focus .tip{display:block}
+.ask{display:flex;gap:8px;margin:10px 0}.ask input{flex:1;min-width:0;border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:15px;background:var(--bg);color:var(--ink)}
+.btn{border:0;border-radius:8px;background:var(--accent);color:var(--accent-ink);font-weight:600;padding:0 16px;cursor:pointer}
+.ans{border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:10px}
+.label{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.l-ai{color:var(--good)}.l-live{color:var(--link)}.l-refuse{color:var(--warn)}
+.snip{border-left:3px solid var(--line);padding:4px 10px;margin:8px 0;font-size:13.5px}
+.rev{border-top:1px solid var(--line);padding:10px 0;font-size:13.5px}.rev:target,.rev.hl{background:var(--chip)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.kpi .v{font-size:26px;font-weight:700;letter-spacing:-.5px}.kpi .k{font-size:13px;color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}td,th{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}th{color:var(--muted);font-weight:600}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+footer{max-width:1200px;margin:0 auto;padding:0 16px 30px;color:var(--muted);font-size:12px}
+.hidden{display:none}
+@media (max-width:800px){.hero,.pp,.two{grid-template-columns:1fr}.pp .img{max-width:280px}nav.tabs{display:none}.bar{flex-wrap:wrap}.logo{font-size:17px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="logo" href="#/">Proof<span>Cart</span></a>
+    <form class="search" id="sf"><input id="q" placeholder="Describe what you need, e.g. gentle brush for fine hair" autocomplete="off" aria-label="Search products"><button>Search</button></form>
+    <nav class="tabs"><a href="#/">Home</a><a href="#/eval">Evaluation</a></nav>
+  </div>
+  <div class="sub"><div class="bar"><span>All Beauty catalog: <b id="ncat">...</b> real products</span><span id="status">Loading search model...</span></div></div>
+</header>
+<main id="app"></main>
+<footer>Data: Amazon Reviews 2023 (Hou et al., 2024, McAuley Lab, UC San Diego), All Beauty category, real products and reviews. Search embeddings: all-MiniLM-L6-v2, query embedded in your browser with transformers.js. AI summaries and AI answers were precomputed offline with DeepSeek (model name deepseek-chat, served by the API as deepseek-flash) and are grounded in the review snippets they cite; live answers for new questions are retrieval only, no model call. Independent prototype, not affiliated with any retailer.</footer>
+<script type="module">
+import { pipeline, env } from "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
+env.allowLocalModels = false;
+const $ = s => document.querySelector(s), app = $("#app");
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const IMG = "https://m.media-amazon.com/images/I/";
+let CAT = [], BYID = {}, PE = null, M = null, embedder = null, CROSS = [];
+const shards = {};
+const stars = r => { const f = Math.round(r || 0); return "&#9733;".repeat(f) + "&#9734;".repeat(5 - f); };
+const fmtN = n => n.toLocaleString("en-US");
+
+async function boot() {
+  const [cat, pe, met, cross] = await Promise.all([
+    fetch("data/catalog.json").then(r => r.json()),
+    fetch("data/prod_emb.i8").then(r => r.arrayBuffer()),
+    fetch("data/metrics.json").then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch("data/cross_qa.json").then(r => r.ok ? r.json() : []).catch(() => [])]);
+  CAT = cat.rows.map(r => ({ id: r[0], title: r[1], store: r[2], rating: r[3], reviews: r[4], img: r[5], ai: r[6] }));
+  CAT.forEach((p, i) => { p.i = i; BYID[p.id] = p; });
+  PE = new Int8Array(pe); M = met; CROSS = cross;
+  $("#ncat").textContent = fmtN(CAT.length);
+  window.addEventListener("hashchange", route); route();
+  try {
+    const t0 = performance.now();
+    embedder = await pipeline("feature-extraction", "Xenova/all-MiniLM-L6-v2");
+    $("#status").textContent = `Semantic search ready in your browser (${((performance.now() - t0) / 1000).toFixed(1)}s load)`;
+    window.__ready = true;
+    if (location.hash.startsWith("#/search")) route();
+  } catch (e) { $("#status").textContent = "Semantic model unavailable, using keyword search"; window.__ready = true; console.warn(e); }
+}
+async function embed(text) { const o = await embedder(text, { pooling: "mean", normalize: true }); return o.data; }
+function scoreProducts(q) {
+  const n = CAT.length, s = new Float32Array(n);
+  for (let i = 0; i < n; i++) { let d = 0, o = i * 384; for (let k = 0; k < 384; k++) d += PE[o + k] * q[k]; s[i] = d / 127; }
+  return s;
+}
+function keyword(qs) {
+  const t = qs.toLowerCase().match(/[a-z]+/g) || [];
+  return CAT.map(p => t.reduce((a, w) => a + (p.title.toLowerCase().includes(w) ? 1 : 0), 0) + Math.log1p(p.reviews) * 1e-3);
+}
+async function search(qs, k = 48) {
+  const t0 = performance.now(); let s;
+  if (embedder) s = scoreProducts(await embed(qs)); else s = keyword(qs);
+  const idx = Array.from(s.keys()).sort((a, b) => s[b] - s[a]).slice(0, k);
+  return { items: idx.map(i => ({ ...CAT[i], score: s[i] })), ms: performance.now() - t0, mode: embedder ? "semantic" : "keyword" };
+}
+const card = p => `<a class="prod" href="#/p/${p.id}"><div class="img">${p.img ? `<img loading="lazy" src="${IMG + esc(p.img)}" alt="" onerror="this.remove()">` : ""}</div>
+  <div class="ptitle">${esc(p.title)}</div><div><span class="stars">${stars(p.rating)}</span> <span class="small muted">${fmtN(p.reviews)} reviews</span></div>
+  ${p.ai ? `<div><span class="badge">AI review answers</span></div>` : ""}</a>`;
+
+async function route() {
+  const h = location.hash || "#/";
+  window.scrollTo(0, 0);
+  if (h.startsWith("#/search")) return viewSearch(decodeURIComponent(h.split("q=")[1] || ""));
+  if (h.startsWith("#/p/")) return viewProduct(h.slice(4));
+  if (h.startsWith("#/eval")) return viewEval();
+  return viewHome();
+}
+$("#sf").addEventListener("submit", e => { e.preventDefault(); const v = $("#q").value.trim(); if (v) location.hash = "#/search?q=" + encodeURIComponent(v); });
+
+function viewHome() {
+  const ex = ["comfortable brush for fine thin hair", "something to stop frizz when drying curls", "gentle exfoliating cloth for the shower", "trimmer that catches the hair", "lashes that look natural", "keep my ears warm on winter runs"];
+  const top = CAT.filter(p => p.ai).slice(0, 8);
+  const k = M ? M.headline : null;
+  app.innerHTML = `<div class="hero">
+   <div class="card"><h1>Shopping answers with proof.</h1><p style="font-size:17px;margin:0 0 8px">Ask a product question and get an answer only from real customer reviews, with every claim linked to its source.</p>
+   <p class="muted">Every AI statement links to the customer reviews that support it. When reviews do not cover a question, the assistant says so instead of guessing. Search understands what you mean, not just the words you type.</p>
+   <div class="pills">${ex.map(e => `<button class="pill" data-q="${esc(e)}">${esc(e)}</button>`).join("")}</div></div>
+   <div class="card"><h3>Measured on hand-checked questions</h3>${k ? `<div class="kpis" style="grid-template-columns:1fr 1fr">
+     ${kpi(pct(k.grounded_unsupported), "unsupported claims, grounded", pct(k.naive_unsupported) + " without grounding")}
+     ${kpi(pct(k.correct_refusal), "correct refusals on unanswerable questions", pct(k.naive_refusal) + " without grounding")}
+     ${kpi(k.median_reviews_to_answer, "median reviews a shopper reads to find the answer", "vs one cited answer")}
+     ${kpi("$" + k.cost_per_1k_answers.toFixed(2), "model cost per 1,000 answers", "")}</div><p class="small"><a href="#/eval">See full evaluation</a></p>` : `<p class="muted">Evaluation results load here.</p>`}</div></div>
+   ${CROSS.length ? `<div class="card" style="margin-top:18px"><h2>Ask across products</h2><p class="small muted">Precomputed AI answers: semantic product search, then review retrieval inside each candidate, then a grounded answer citing reviews from several products.</p>
+   <div class="pills">${CROSS.map((c, i) => `<button class="pill" data-x="${i}">${esc(c.q)}</button>`).join("")}</div><div id="xans"></div></div>` : ""}
+   <h2 style="margin-top:22px">Most-reviewed products with AI review answers</h2><div class="grid">${top.map(card).join("")}</div>`;
+  app.querySelectorAll("[data-q]").forEach(b => b.onclick = () => { $("#q").value = b.dataset.q; location.hash = "#/search?q=" + encodeURIComponent(b.dataset.q); });
+  app.querySelectorAll("[data-x]").forEach(b => b.onclick = () => showCross(+b.dataset.x));
+}
+const pct = x => x == null ? "n/a" : (x * 100).toFixed(0) + "%";
+const kpi = (v, k, sub) => `<div class="card kpi" style="padding:12px"><div class="v">${v}</div><div class="k">${k}</div>${sub ? `<div class="small muted">${sub}</div>` : ""}</div>`;
+
+async function loadShard(id) { if (!shards[id]) { const j = await fetch(`data/p/${id}.json`).then(r => r.json()); const b = atob(j.emb), e = new Int8Array(b.length); for (let i = 0; i < b.length; i++) e[i] = (b.charCodeAt(i) << 24) >> 24; j.E = e; shards[id] = j; } return shards[id]; }
+async function showCross(i) {
+  const c = CROSS[i], box = $("#xans"); const revs = {};
+  await Promise.all(c.products.map(loadShard)); c.products.forEach(p => shards[p].reviews.forEach(r => revs[r.id] = { ...r, pid: p }));
+  const ev = c.rids.map(id => revs[id]);
+  box.innerHTML = answerBlock(c, ev, "AI answer, precomputed, grounded in the cited reviews", true) +
+   `<div class="grid">${c.products.map(p => card(BYID[p])).join("")}</div>`;
+}
+function citeChip(n, r, showProd) {
+  if (!r) return "";
+  return `<span class="cite" tabindex="0">${n}<span class="tip"><span class="stars">${stars(r.r)}</span> <b>${esc(r.t)}</b>${showProd ? `<br><span class="small muted">${esc(BYID[r.pid]?.title.slice(0, 70))}</span>` : ""}<br>${esc(r.x.slice(0, 380))}${r.x.length > 380 ? "..." : ""}<br><span class="small muted">${r.v ? "Verified purchase, " : ""}${r.d}</span></span></span>`;
+}
+function answerBlock(a, ev, label, showProd) {
+  if (a.refused) return `<div class="ans"><div class="label l-refuse">Not enough evidence in reviews</div><div>${esc(a.answer)}</div><div class="small muted">The assistant declined because the retrieved reviews do not address this question.</div></div>`;
+  const body = (a.claims && a.claims.length) ? a.claims.map(c => esc(c.text.replace(/\s*(\[\d+\])+\s*/g, " ").trim()) + (c.cites || []).map(n => citeChip(n, ev[n - 1], showProd)).join("")).join(" ") : esc(a.answer);
+  return `<div class="ans"><div class="label l-ai">${label}</div><div>${body}</div></div>`;
+}
+
+async function viewSearch(qs) {
+  $("#q").value = qs;
+  app.innerHTML = `<p class="muted">Searching...</p>`;
+  if (!embedder && !window.__ready) { app.innerHTML = `<p class="muted">Loading the search model in your browser (about 23 MB, once)...</p>`; return; }
+  const r = await search(qs);
+  window.__lastSearch = r;
+  app.innerHTML = `<div class="small muted">${r.mode === "semantic" ? "Semantic search" : "Keyword search"} over ${fmtN(CAT.length)} products for <b>${esc(qs)}</b> in ${r.ms.toFixed(0)} ms, ranked by meaning in your browser.</div>
+  <div class="grid">${r.items.map(card).join("")}</div>`;
+}
+
+async function viewProduct(id) {
+  const p = BYID[id]; if (!p) { app.innerHTML = "<p>Product not found.</p>"; return; }
+  let head = `<div class="pp"><div><div class="img card">${p.img ? `<img src="${IMG + esc(p.img)}" alt="" onerror="this.remove()">` : ""}</div></div>
+   <div><h1 style="font-size:22px">${esc(p.title)}</h1><div class="muted small">${esc(p.store)}</div>
+   <div><span class="stars">${stars(p.rating)}</span> ${p.rating ?? ""} <span class="muted small">(${fmtN(p.reviews)} reviews with text in the dataset)</span></div>
+   <div id="pbody" style="margin-top:14px"></div></div></div>`;
+  app.innerHTML = head;
+  const body = $("#pbody");
+  if (!p.ai) { body.innerHTML = `<div class="card"><p class="muted">AI review answers cover the 1,500 most-reviewed products. This product has search only.</p></div>`; return; }
+  const s = await loadShard(id), R = s.reviews;
+  const sum = s.summary && s.summary.claims ? `<div class="card"><div class="label l-ai">AI summary, every claim cites reviews</div><h2 style="margin-top:4px">Customers say</h2>
+    <ul class="claims">${s.summary.claims.map(c => `<li>${esc(c.text.replace(/\s*(\[\d+\])+\s*/g, " ").trim())}${(c.cites || []).map(n => citeChip(n, R[n - 1])).join("")}</li>`).join("")}</ul>
+    <div class="small muted">Generated from the 15 most helpful reviews. Hover a number to read the review.</div></div>` : "";
+  const curated = s.qa.length ? `<div class="small muted" style="margin-top:12px">Common questions (AI answers, precomputed):</div><div class="pills">${s.qa.map((q, i) => `<button class="pill" data-c="${i}">${esc(q.q)}</button>`).join("")}</div>` : "";
+  body.innerHTML = sum + `<div class="card" style="margin-top:14px"><h2>Ask about this product</h2>
+    <form class="ask" id="af"><input id="aq" placeholder="e.g. Does it work on thick hair?" aria-label="Ask a question"><button class="btn">Ask</button></form>
+    <div class="small muted">New questions get a live, retrieval-only answer: the most relevant review passages, ranked in your browser. No AI text is generated for them.</div>
+    ${curated}<div id="aout"></div></div>
+    <div class="card" style="margin-top:14px"><h2>Reviews used by the assistant</h2><div class="small muted">The ${R.length} most helpful reviews of this product.</div>${R.map((r, i) => `<div class="rev" id="r${i + 1}"><span class="stars">${stars(r.r)}</span> <b>${esc(r.t)}</b> <span class="small muted">[${i + 1}] ${r.v ? "Verified purchase, " : ""}${r.d}${r.h ? `, ${r.h} found helpful` : ""}</span><div>${esc(r.x)}</div></div>`).join("")}</div>`;
+  body.querySelectorAll("[data-c]").forEach(b => b.onclick = () => {
+    const a = s.qa[+b.dataset.c]; const ev = a.rids.map(id => R.find(r => r.id === id));
+    $("#aout").innerHTML = `<div class="small" style="margin-top:10px"><b>${esc(a.q)}</b></div>` + answerBlock(a, ev, "AI answer, precomputed, grounded in the cited reviews");
+  });
+  $("#af").onsubmit = async e => {
+    e.preventDefault(); const q = $("#aq").value.trim(); if (!q) return;
+    if (!embedder) { $("#aout").innerHTML = `<p class="muted">Search model still loading.</p>`; return; }
+    const t0 = performance.now(), v = await embed(q);
+    const sc = R.map((r, i) => { let d = 0; for (let k = 0; k < 384; k++) d += s.E[i * 384 + k] * v[k]; return [d / 127, i]; }).sort((a, b) => b[0] - a[0]);
+    const th = M ? M.live_threshold : 0.45, ms = performance.now() - t0;
+    const top = sc.slice(0, 3);
+    $("#aout").innerHTML = `<div class="small" style="margin-top:10px"><b>${esc(q)}</b></div>` + (top[0][0] < th
+      ? `<div class="ans"><div class="label l-refuse">Not enough evidence in reviews</div><div>No review passage is close enough to this question (best match ${top[0][0].toFixed(2)}, threshold ${th}).</div></div>`
+      : `<div class="ans"><div class="label l-live">Live answer, retrieval only: top review passages</div>${top.filter(t => t[0] >= th).map(([sim, i]) => `<div class="snip"><span class="stars">${stars(R[i].r)}</span> <b>${esc(R[i].t)}</b> <span class="small muted">[${i + 1}] match ${sim.toFixed(2)}</span><div>${esc(R[i].x.slice(0, 300))}${R[i].x.length > 300 ? "..." : ""}</div></div>`).join("")}<div class="small muted">Ranked in ${ms.toFixed(0)} ms in your browser.</div></div>`);
+  };
+}
+
+function viewEval() {
+  if (!M) { app.innerHTML = "<p>Evaluation file not found.</p>"; return; }
+  const a = M.answers, s = M.summaries, r = M.search, e = M.efficiency, c = M.cost;
+  app.innerHTML = `<h1>Evaluation</h1><p class="muted">Real numbers from this repo. Hand labels by the author; the LLM judge is reported next to them for comparison.</p>
+  <div class="kpis">${kpi(pct(a.grounded.unsupported_rate), "unsupported-claim rate, grounded answers (hand-checked)", `${a.grounded.n_claims} claims`)}
+  ${kpi(pct(a.naive.unsupported_rate), "unsupported-claim rate, no grounding (hand-checked)", `${a.naive.n_claims} claims`)}
+  ${kpi(pct(a.grounded.correct_refusal), "correct refusals on unanswerable questions", `${a.n_unanswerable} questions; naive ${pct(a.naive.correct_refusal)}`)}
+  ${kpi(pct(a.grounded.answer_rate), "answerable questions answered", `${a.n_answerable} questions`)}
+  ${kpi(pct(a.grounded.citation_precision), "citation precision", "cited reviews that support the claim")}
+  ${kpi(e.median_reviews, "median reviews read to find the answer", `mean ${e.mean_reviews.toFixed(1)}; vs 1 cited answer`)}
+  ${kpi("$" + c.per_1k_answers.toFixed(2), "model cost per 1,000 answers", `$${c.per_1k_products_summary.toFixed(2)} per 1,000 product summaries`)}
+  ${kpi(c.p50_latency_s.toFixed(1) + " s", "median answer latency (API, offline)", `p90 ${c.p90_latency_s.toFixed(1)} s`)}</div>
+  <div class="two" style="margin-top:16px">
+  <div class="card"><h2>Answers: grounded vs naive</h2><table><tr><th>Metric</th><th>Grounded</th><th>Naive</th></tr>
+   <tr><td>Unsupported claims (hand)</td><td>${pct(a.grounded.unsupported_rate)}</td><td>${pct(a.naive.unsupported_rate)}</td></tr>
+   <tr><td>Unsupported claims (LLM judge)</td><td>${pct(a.grounded.judge_unsupported_rate)}</td><td>${pct(a.naive.judge_unsupported_rate)}</td></tr>
+   <tr><td>Correct refusal, unanswerable</td><td>${pct(a.grounded.correct_refusal)}</td><td>${pct(a.naive.correct_refusal)}</td></tr>
+   <tr><td>Answered, answerable</td><td>${pct(a.grounded.answer_rate)}</td><td>${pct(a.naive.answer_rate)}</td></tr>
+   <tr><td>Hand vs judge agreement</td><td colspan="2">${pct(a.judge_agreement)} of grounded claims</td></tr></table>
+   <p class="small muted">${a.n} hand-written questions over ${a.n_products} products (${a.n_answerable} answerable, ${a.n_unanswerable} not answerable from reviews, labelled by hand from the review text).</p></div>
+  <div class="card"><h2>Customers say: cited vs naive summary</h2><table><tr><th>Metric</th><th>Cited</th><th>Naive</th></tr>
+   <tr><td>Unsupported claims (hand, ${s.hand_n} cited claims)</td><td>${pct(s.hand_unsupported)}</td><td>n/a</td></tr>
+   <tr><td>Citation precision (hand)</td><td colspan="2">${pct(s.hand_citation_precision)}</td></tr>
+   <tr><td>Unsupported claims (LLM judge, ${s.n_products} products)</td><td>${pct(s.judge_cited_unsupported)}</td><td>${pct(s.judge_naive_unsupported)}</td></tr>
+   <tr><td>Partially supported or overgeneralized (judge)</td><td>${pct(s.judge_cited_partial)}</td><td>${pct(s.judge_naive_partial)}</td></tr>
+   <tr><td>Fully supported (judge)</td><td>${pct(1 - s.judge_cited_unsupported - s.judge_cited_partial)}</td><td>${pct(1 - s.judge_naive_unsupported - s.judge_naive_partial)}</td></tr>
+   <tr><td>Partially supported (hand)</td><td>${pct(s.hand_partial)}</td><td>n/a</td></tr></table>
+   <p class="small muted">Naive summaries see the same 15 reviews but are not asked to cite; the judge checks them against all 15, which favours naive.</p></div>
+  <div class="card"><h2>Search retrieval</h2><table><tr><th>Ranker</th><th>Precision@5</th><th>MRR</th></tr>
+   <tr><td>Semantic (MiniLM, in browser)</td><td>${r.semantic.p_at_5.toFixed(2)}</td><td>${r.semantic.mrr.toFixed(2)}</td></tr>
+   <tr><td>Keyword baseline</td><td>${r.keyword.p_at_5.toFixed(2)}</td><td>${r.keyword.mrr.toFixed(2)}</td></tr></table>
+   <p class="small muted">${r.n_queries} hand-written shopper queries, top 5 labelled by hand.</p>
+   <h3 style="margin-top:12px">Live answers (retrieval only)</h3><p class="small">Refuse when the best review passage scores below ${M.live.threshold}: ${pct(M.live.accuracy)} of the 60 eval questions get the right answer-or-refuse decision without any model call.</p></div>
+  <div class="card"><h2>Efficiency</h2><table>
+   <tr><td>Reviews read before the first one that answers (median / mean)</td><td>${e.median_reviews} / ${e.mean_reviews.toFixed(1)}</td></tr>
+   <tr><td>Words read manually (median)</td><td>${fmtN(e.median_words)}</td></tr>
+   <tr><td>Words in the cited AI answer (median)</td><td>${e.median_answer_words}</td></tr>
+   <tr><td>Reading time saved per question (median, assumed 238 wpm)</td><td>${e.median_minutes_saved.toFixed(1)} min</td></tr></table>
+   <p class="small muted">${e.n} answerable questions; reviews in most-helpful order. 238 words per minute is an assumption (Brysbaert, 2019).</p></div></div>`;
+}
+boot();
+</script>
+</body>
+</html>

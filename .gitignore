@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+data/raw/
+data/derived/*
+!data/derived/usage.jsonl
+!data/derived/summaries.json
+!data/derived/showcase_qa.json
+!data/derived/cross_qa.json
+.env
+.env.*
+.DS_Store

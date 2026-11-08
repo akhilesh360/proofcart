@@ -1,0 +1,326 @@
+[
+ {
+  "i": 0,
+  "q": "Does this cloth exfoliate well or is it too rough on skin?",
+  "pid": "B085BB7B1M",
+  "n_reviews": 1962,
+  "reviews_to_answer": 2,
+  "words_to_answer": 322,
+  "answer_words": 47
+ },
+ {
+  "i": 1,
+  "q": "Does it dry quickly and stay free of mildew?",
+  "pid": "B085BB7B1M",
+  "n_reviews": 1962,
+  "reviews_to_answer": 1,
+  "words_to_answer": 233,
+  "answer_words": 19
+ },
+ {
+  "i": 4,
+  "q": "How long does the color last?",
+  "pid": "B0BM4GX6TT",
+  "n_reviews": 1750,
+  "reviews_to_answer": 2,
+  "words_to_answer": 425,
+  "answer_words": 43
+ },
+ {
+  "i": 6,
+  "q": "Does the diffuser fit my hair dryer?",
+  "pid": "B019GBG0IE",
+  "n_reviews": 1328,
+  "reviews_to_answer": 2,
+  "words_to_answer": 297,
+  "answer_words": 8
+ },
+ {
+  "i": 7,
+  "q": "Does it reduce frizz on curly hair?",
+  "pid": "B019GBG0IE",
+  "n_reviews": 1328,
+  "reviews_to_answer": 1,
+  "words_to_answer": 213,
+  "answer_words": 29
+ },
+ {
+  "i": 8,
+  "q": "Does it work with a Dyson Supersonic dryer?",
+  "pid": "B019GBG0IE",
+  "n_reviews": 1328,
+  "reviews_to_answer": 23,
+  "words_to_answer": 2888,
+  "answer_words": 22
+ },
+ {
+  "i": 9,
+  "q": "Does it remove tartar effectively?",
+  "pid": "B08L5KN7X4",
+  "n_reviews": 1343,
+  "reviews_to_answer": 1,
+  "words_to_answer": 425,
+  "answer_words": 38
+ },
+ {
+  "i": 10,
+  "q": "Can it damage tooth enamel or gums?",
+  "pid": "B08L5KN7X4",
+  "n_reviews": 1343,
+  "reviews_to_answer": 3,
+  "words_to_answer": 804,
+  "answer_words": 8
+ },
+ {
+  "i": 12,
+  "q": "Are the bristles soft enough for fine hair?",
+  "pid": "B00R1TAN7I",
+  "n_reviews": 1372,
+  "reviews_to_answer": 10,
+  "words_to_answer": 818,
+  "answer_words": 40
+ },
+ {
+  "i": 13,
+  "q": "Does the brush shed bristles over time?",
+  "pid": "B00R1TAN7I",
+  "n_reviews": 1372,
+  "reviews_to_answer": 1,
+  "words_to_answer": 69,
+  "answer_words": 19
+ },
+ {
+  "i": 15,
+  "q": "How hot does the wand get?",
+  "pid": "B01M1OFZOG",
+  "n_reviews": 1243,
+  "reviews_to_answer": 5,
+  "words_to_answer": 1270,
+  "answer_words": 43
+ },
+ {
+  "i": 16,
+  "q": "Do the curls hold all day?",
+  "pid": "B01M1OFZOG",
+  "n_reviews": 1243,
+  "reviews_to_answer": 1,
+  "words_to_answer": 519,
+  "answer_words": 44
+ },
+ {
+  "i": 18,
+  "q": "Does the brush iron straighten hair or just add volume?",
+  "pid": "B01N4885PD",
+  "n_reviews": 1037,
+  "reviews_to_answer": 10,
+  "words_to_answer": 1055,
+  "answer_words": 8
+ },
+ {
+  "i": 19,
+  "q": "Does it pull or snag hair?",
+  "pid": "B01N4885PD",
+  "n_reviews": 1037,
+  "reviews_to_answer": 20,
+  "words_to_answer": 2415,
+  "answer_words": 26
+ },
+ {
+  "i": 21,
+  "q": "Does it leave hair soft?",
+  "pid": "B012Q9NGE4",
+  "n_reviews": 861,
+  "reviews_to_answer": 3,
+  "words_to_answer": 602,
+  "answer_words": 35
+ },
+ {
+  "i": 22,
+  "q": "Is it safe for color-treated hair?",
+  "pid": "B012Q9NGE4",
+  "n_reviews": 861,
+  "reviews_to_answer": 10,
+  "words_to_answer": 1709,
+  "answer_words": 35
+ },
+ {
+  "i": 24,
+  "q": "Does it help with joint pain?",
+  "pid": "B00J7QCNDU",
+  "n_reviews": 934,
+  "reviews_to_answer": 2,
+  "words_to_answer": 211,
+  "answer_words": 37
+ },
+ {
+  "i": 25,
+  "q": "Does it have a strong smell?",
+  "pid": "B00J7QCNDU",
+  "n_reviews": 934,
+  "reviews_to_answer": 5,
+  "words_to_answer": 668,
+  "answer_words": 35
+ },
+ {
+  "i": 27,
+  "q": "Does the balm help with stretching ears?",
+  "pid": "B005BZQHEC",
+  "n_reviews": 785,
+  "reviews_to_answer": 1,
+  "words_to_answer": 97,
+  "answer_words": 44
+ },
+ {
+  "i": 28,
+  "q": "How does it smell?",
+  "pid": "B005BZQHEC",
+  "n_reviews": 785,
+  "reviews_to_answer": 5,
+  "words_to_answer": 381,
+  "answer_words": 46
+ },
+ {
+  "i": 30,
+  "q": "Is the eyebrow pen waterproof?",
+  "pid": "B07ZJKVVLW",
+  "n_reviews": 841,
+  "reviews_to_answer": 1,
+  "words_to_answer": 50,
+  "answer_words": 36
+ },
+ {
+  "i": 31,
+  "q": "Does the color look natural?",
+  "pid": "B07ZJKVVLW",
+  "n_reviews": 841,
+  "reviews_to_answer": 2,
+  "words_to_answer": 86,
+  "answer_words": 22
+ },
+ {
+  "i": 33,
+  "q": "Do the cotton rounds leave lint on the face?",
+  "pid": "B07TK15BQQ",
+  "n_reviews": 920,
+  "reviews_to_answer": 1,
+  "words_to_answer": 65,
+  "answer_words": 25
+ },
+ {
+  "i": 34,
+  "q": "Are they thick enough for toner?",
+  "pid": "B07TK15BQQ",
+  "n_reviews": 920,
+  "reviews_to_answer": 5,
+  "words_to_answer": 397,
+  "answer_words": 38
+ },
+ {
+  "i": 39,
+  "q": "Does the vacuum actually catch the trimmed hair?",
+  "pid": "B000FEF1V4",
+  "n_reviews": 614,
+  "reviews_to_answer": 1,
+  "words_to_answer": 190,
+  "answer_words": 42
+ },
+ {
+  "i": 42,
+  "q": "Does it stick to the shower floor?",
+  "pid": "B004H5D40W",
+  "n_reviews": 748,
+  "reviews_to_answer": 4,
+  "words_to_answer": 314,
+  "answer_words": 41
+ },
+ {
+  "i": 45,
+  "q": "How does the hair mask smell?",
+  "pid": "B0BV1FPZY6",
+  "n_reviews": 603,
+  "reviews_to_answer": 3,
+  "words_to_answer": 363,
+  "answer_words": 24
+ },
+ {
+  "i": 46,
+  "q": "Does it work on curly or dry hair?",
+  "pid": "B0BV1FPZY6",
+  "n_reviews": 603,
+  "reviews_to_answer": 2,
+  "words_to_answer": 300,
+  "answer_words": 48
+ },
+ {
+  "i": 48,
+  "q": "How long do the batteries last?",
+  "pid": "B000FEIOHW",
+  "n_reviews": 502,
+  "reviews_to_answer": 1,
+  "words_to_answer": 51,
+  "answer_words": 28
+ },
+ {
+  "i": 49,
+  "q": "Is it gentle enough for sensitive gums?",
+  "pid": "B000FEIOHW",
+  "n_reviews": 502,
+  "reviews_to_answer": 19,
+  "words_to_answer": 4276,
+  "answer_words": 29
+ },
+ {
+  "i": 51,
+  "q": "Does it actually remove blackheads?",
+  "pid": "B08RNQNFW1",
+  "n_reviews": 562,
+  "reviews_to_answer": 1,
+  "words_to_answer": 194,
+  "answer_words": 37
+ },
+ {
+  "i": 52,
+  "q": "Does it leave bruises or red marks?",
+  "pid": "B08RNQNFW1",
+  "n_reviews": 562,
+  "reviews_to_answer": 1,
+  "words_to_answer": 194,
+  "answer_words": 53
+ },
+ {
+  "i": 54,
+  "q": "Did people see longer lashes?",
+  "pid": "B011JG1K3E",
+  "n_reviews": 472,
+  "reviews_to_answer": 1,
+  "words_to_answer": 1014,
+  "answer_words": 24
+ },
+ {
+  "i": 55,
+  "q": "Does it irritate the eyes?",
+  "pid": "B011JG1K3E",
+  "n_reviews": 472,
+  "reviews_to_answer": 3,
+  "words_to_answer": 1268,
+  "answer_words": 41
+ },
+ {
+  "i": 56,
+  "q": "Does it change eye color?",
+  "pid": "B011JG1K3E",
+  "n_reviews": 472,
+  "reviews_to_answer": 20,
+  "words_to_answer": 2649,
+  "answer_words": 21
+ },
+ {
+  "i": 57,
+  "q": "Is it a good size for a purse?",
+  "pid": "B00MZT4UEG",
+  "n_reviews": 525,
+  "reviews_to_answer": 2,
+  "words_to_answer": 274,
+  "answer_words": 33
+ }
+]
