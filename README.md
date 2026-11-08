@@ -29,6 +29,8 @@ Shoppers deciding on a product with hundreds or thousands of reviews. The questi
 ## 2. Product goal
 A shopper gets a correct, checkable answer to a product question in seconds: every claim links to the reviews that support it, and when reviews do not cover the question the assistant says "Not enough evidence in reviews" instead of guessing.
 
+![Architecture](docs/architecture.png)
+
 ## 3. Solution and trade-offs
 **Built**
 - **Ask about this product.** Retrieve the 6 most relevant review passages (MiniLM embeddings), then the model answers only from them, citing passage numbers per claim, or refuses. Curated questions (5 per product for the 100 most-reviewed products) have precomputed AI answers; any new question gets a live, retrieval-only answer in the browser (top passages, or a refusal below a similarity threshold). The page labels which is which.
@@ -138,4 +140,3 @@ Hand labels live in `eval/` (`hand_labels_src.txt`, `summary_hand_labels.jsonl`,
 
 ### Architecture
 
-![Architecture](docs/architecture.png)
