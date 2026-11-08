@@ -138,5 +138,3 @@ python3 -m http.server 8000 --directory docs   # open http://localhost:8000
 ```
 Hand labels live in `eval/` (`hand_labels_src.txt`, `summary_hand_labels.jsonl`, `search_labels.txt`); every number above is recomputed by `scripts/11_metrics.py` into `eval/metrics.json`.
 
-### Architecture
-
