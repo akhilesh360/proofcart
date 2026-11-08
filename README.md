@@ -12,6 +12,8 @@
 
 ![How it works](docs/flow.png)
 
+![Results at a glance](docs/results.png)
+
 ### Data
 
 | | |
@@ -49,6 +51,9 @@ A shopper gets a correct, checkable answer to a product question in seconds: eve
 **Not built (on purpose)**: a live LLM endpoint, personalization or purchase history, image or video reviews, multi-turn chat memory, fake-review detection (one review in the data openly says the seller offered a free product for a 5-star review), and any Amazon branding.
 
 ## 4. North Star metric
+
+![Metrics framework](docs/metrics.png)
+
 **Grounded answer rate**: share of product questions that get either (a) an answer whose every claim is supported by a cited review, or (b) a correct "not enough evidence" refusal. Measured weekly on a stratified, hand-labelled sample of live questions. It rewards being helpful and honest together, and it falls if the assistant hallucinates or over-refuses.
 On this repo's 60-question set: 57 of 60 = **95%** (the 3 misses are false refusals; no answer contained an unsupported claim).
 
@@ -78,6 +83,9 @@ Scored impact x reach / effort (1 to 5 each):
 5. **Fake-review weighting** (4 x 3 / 5): important, but its own project. Deferred.
 
 ## 8. Experiment and learning
+
+![Experiment design](docs/experiment.png)
+
 **What the prototype shows (real numbers, this repo)**
 
 | Eval | Grounded (ProofCart) | Naive (no grounding) |
